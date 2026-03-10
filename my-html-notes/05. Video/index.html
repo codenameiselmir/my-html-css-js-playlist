@@ -1,0 +1,97 @@
+<!--
+===========================================================
+Lesson 5 - Video
+Repository: my-html-css-js-playlist
+File: my-html-notes
+===========================================================
+-->
+
+<!--
+
+    - What is Video in HTML?
+
+HTML allows us to embed video files directly into a webpage.
+
+Examples:
+tutorials, movies, presentations, advertisements, or screen recordings.
+
+The <video> tag is used to display video content.
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Learn HTML - Video</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn HTML video">
+
+</head>
+
+<body>
+
+    <!--
+    Basic Video Player
+    controls = shows play, pause, volume, fullscreen, timeline
+    -->
+
+    <video src="video.mp4" controls width="500"></video>
+
+
+    <!--
+    Loop Video
+    loop = automatically restart video when it finishes
+    -->
+
+    <br><br>
+
+    <video src="video.mp4" controls loop width="500"></video>
+
+
+    <!--
+    Autoplay Video
+
+    Note:
+    Most browsers only allow autoplay if the video is muted.
+    -->
+
+    <br><br>
+
+    <video src="video.mp4" autoplay muted width="500"></video>
+
+
+    <!--
+    Poster Image
+
+    poster = image shown before the video starts playing
+    -->
+
+    <br><br>
+
+    <video src="video.mp4" controls poster="thumbnail.jpg" width="500"></video>
+
+
+    <!--
+    Multiple Source Formats
+    Improves compatibility across browsers
+    -->
+
+    <br><br>
+
+    <video controls width="500">
+
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+
+        Your browser does not support the video tag.
+
+    </video>
+
+
+</body>
+
+</html>
