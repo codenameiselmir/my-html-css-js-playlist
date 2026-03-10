@@ -1,0 +1,115 @@
+<!--
+===========================================================
+Lesson 9 - Tables
+Repository: my-html-css-js-playlist
+File: my-html-notes
+===========================================================
+-->
+
+<!--
+
+    - What are Tables in HTML?
+
+Tables are used to display data in rows and columns.
+
+Examples:
+price lists, schedules, reports, statistics.
+
+HTML tables are created using the <table> element.
+
+Main table elements:
+table  -> container of the table
+tr     -> table row
+th     -> table header cell
+td     -> table data cell
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Learn HTML - Tables</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn HTML tables">
+
+</head>
+
+<body>
+
+    <!--
+    Basic Table Example
+    -->
+
+    <table border="1">
+
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+        </tr>
+
+        <tr>
+            <td>John</td>
+            <td>25</td>
+            <td>USA</td>
+        </tr>
+
+        <tr>
+            <td>Maria</td>
+            <td>30</td>
+            <td>Spain</td>
+        </tr>
+
+    </table>
+
+
+    <!--
+    Table with thead, tbody, and tfoot
+    -->
+
+    <br><br>
+
+    <table border="1">
+
+        <thead>
+
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Laptop</td>
+                <td>$1000</td>
+            </tr>
+
+            <tr>
+                <td>Phone</td>
+                <td>$500</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+
+            <tr>
+                <td>Total</td>
+                <td>$1500</td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+
+</body>
+
+</html>
