@@ -1,0 +1,86 @@
+<!--
+===========================================================
+Lesson 4 - Audio
+Repository: my-html-css-js-playlist
+File: my-html-notes
+===========================================================
+-->
+
+<!--
+
+    - What is Audio in HTML?
+
+HTML allows us to embed sound files directly into a webpage.
+
+Examples:
+music, podcasts, sound effects, voice recordings.
+
+The <audio> tag is used to add audio to a webpage.
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Learn HTML - Audio</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn HTML audio">
+
+</head>
+
+<body>
+
+    <!--
+    Basic Audio Player
+    controls = displays play, pause, volume and timeline
+    -->
+
+    <audio src="audio.mp3" controls></audio>
+
+
+    <!--
+    Loop Audio
+    loop = automatically restart the audio after it ends
+    -->
+
+    <br><br>
+
+    <audio src="audio.mp3" controls loop></audio>
+
+
+    <!--
+    Autoplay Audio
+    autoplay = automatically start playing when page loads
+
+    Note:
+    Most modern browsers block autoplay unless the audio is muted.
+    -->
+
+    <br><br>
+
+    <audio src="audio.mp3" autoplay muted></audio>
+
+
+    <!--
+    Multiple Source Formats
+    Improves browser compatibility
+    -->
+
+    <br><br>
+
+    <audio controls>
+
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+
+        Your browser does not support the audio element.
+
+    </audio>
+
+</body>
+
+</html>
